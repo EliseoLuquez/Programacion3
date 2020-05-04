@@ -1,0 +1,1 @@
+[{"tipo":"molde","precio":"250","stock":"20","sabor":"queso","img":"C:\\xampp\\tmp\\phpEDB6.tmp"},{"tipo":"piedra","precio":"310","stock":"30","sabor":"jamon","img":"C:\\xampp\\tmp\\php812D.tmp"}]

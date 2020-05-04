@@ -1,0 +1,1 @@
+[{"email":"cliente@hotmail.com","clave":"6789","tipo":"cliente"},{"email":"ejemplo@hotmail.com","clave":"12345","tipo":"encargado"}]
