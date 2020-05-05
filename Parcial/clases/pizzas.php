@@ -71,7 +71,7 @@ class Pizza
 
             foreach ($listaProd as $aux) 
             {
-                $retorno = $retorno . $aux['pizzas']. PHP_EOL;    
+                $retorno = $retorno . $aux['tipo']. ',' . $aux['precio']. ',' .$aux['stock']. ',' .$aux['sabor']. ',' .$aux['img']. ',' .PHP_EOL;    
             }   
         }
         return $retorno;

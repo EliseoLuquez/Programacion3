@@ -60,7 +60,7 @@ switch($request_method)
 
                 $auxUsu = ValidadorJWT::VerificarToken($token);
                 $tipoUsuario = Usuario::EsAdmin($auxUsu);
-                if($tipoUsuario)//true admin / false user
+                if($tipoUsuario)
                 {
                     if(isset($_POST['tipo']) && isset($_POST['precio']) && isset($_POST['stock']) && isset($_POST['sabor']) && isset($_FILES['foto']))
                     {
@@ -86,7 +86,7 @@ switch($request_method)
                 $token = $header['token'];
                 $auxUsu = ValidadorJWT::VerificarToken($token);
                 $tipoUsuario = Usuario::EsAdmin($auxUsu);
-                if($tipoUsuario ==  false)//true admin / false user
+                if($tipoUsuario ==  false)
                 {
                     if(isset($_POST['tipo']) && isset($_POST['sabor']))
                     {
@@ -94,9 +94,7 @@ switch($request_method)
                         if($datos != 0)
                         {
                             $venta = new Venta($auxUsu->email, $_POST['tipo'], $_POST['sabor'], $datos, $fecha);
-                            //guardo venta seralizada
                             GuardarVenta($venta, 'ventas.txt');
-                            //modifico stock
                             if(Pizza::ModificarStock($_POST['tipo'], $_POST['sabor']))
                             {
                                 $datos = 'Monto Venta: '. $datos;
@@ -123,7 +121,6 @@ switch($request_method)
     break;
     
     case 'GET':
-        //$datos = Usuario::Mostrar($token);
         $token = $header['token'];
         $auxUsu = ValidadorJWT::VerificarToken($token);
         $tipoUsuario = Usuario::EsAdmin($auxUsu);
@@ -131,7 +128,7 @@ switch($request_method)
         switch ($path_info) 
         {
             case '/stock'://PUNTO 4
-                $datos = Producto::MostrarProductos();
+                $datos = Pizza::MostrarPizzas();
                 $datos != '' ??  $datos = 'Faltan datos';
                 //echo json_encode($respuesta);
                 break;

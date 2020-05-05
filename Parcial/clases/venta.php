@@ -23,9 +23,8 @@ class Venta
 
     public function MostrarVentas()
     {   
-        //$usuario = ValidadorJWT::VerificarToken($dato);
         $retorno = '';
-        //$admin = 'admin';
+
         $lectura = LeerVenta("ventas.txt", $listaVta);
         if($lectura)
         {
@@ -50,29 +49,11 @@ class Venta
             {
                 if($aux->usuarioVta == $dato->id)
                 {
-                    array_push($array, $aux);
-                    //$retorno = $retorno . $aux['idVta']. $aux['cantProd'] .  $aux['usuarioVta']. PHP_EOL;   
+                    array_push($array, $aux); 
                     $retorno = $array; 
                 }
             }
         }
         return $retorno;
-    } /*   
-    public static function MostrarVentasUser($nombre)
-    {
-        $return = false;
-        $response = Data::DeserializarObjeto("ventas.txt");
-        $array = array();
-        foreach ($response as $users)
-        {
-            if ($users->comprador == $nombre && $users!='@')
-            {
-                array_push($array,$users);
-                //$return = $return . $users;
-                $return = $array;
-            }
-        }
-        return $return;
     }
-*/
 }

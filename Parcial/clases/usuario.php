@@ -32,7 +32,6 @@ class Usuario
     public static function Login($email, $clave)
     {
         $retorno = false;
-        //$listaUsuarios = array();
         if(LeerUsuario('users.txt', $listaUsuarios))
         {
             $retorno = false;
@@ -63,9 +62,7 @@ class Usuario
         $retorno = false;
         $encargado = 'encargado';
         $cliente = 'cliente';
-        
-        //$usuario = ValidadorJWT::VerificarToken($dato);
-        //var_dump($dato);
+
 
         if($dato->tipo == $encargado)
         {
@@ -73,17 +70,6 @@ class Usuario
         }
         return $retorno;
     }
-/*
-    public function TraerEmail($dato)
-    {
-        $retorno = '';
 
-        if($dato->email ==)
-        {
-
-        }
-
-    }
-    */
 
 }
