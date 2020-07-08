@@ -1,0 +1,1 @@
+[{"id":1594536199,"obra_social":"Osdepym","clave":"1234","tipo":"admin","nombre":"Eliseo","dni":"34372657"},{"id":1485166877,"obra_social":"Osdepym","clave":"5678","tipo":"user","nombre":"Romina","dni":"3593427"},{"id":1895213392,"obra_social":"Osdepym","clave":"01234","tipo":"user","nombre":"Gaspar","dni":"12345678"}]

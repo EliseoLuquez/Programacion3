@@ -1,0 +1,1 @@
+[{"idVenta":260,"email":"ejemplo@hotmail.com","tipo":"molde","sabor":"jamon","cantidad":"6","precio":1500}]

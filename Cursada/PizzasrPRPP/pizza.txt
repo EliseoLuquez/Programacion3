@@ -1,0 +1,1 @@
+[{"id":344,"precio":"250","tipo":"molde","stock":0,"sabor":"jamon","img1":".\/imagenes\/pizzas\/344foto1.jpeg","img2":".\/imagenes\/pizzas\/344foto2.jpeg"}]

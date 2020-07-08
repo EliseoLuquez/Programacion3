@@ -1,0 +1,12 @@
+{
+    "name": "lelis/practica-parcial",
+    "authors": [
+        {
+            "name": "Eliseo Luquez",
+            "email": "leliseo89@hotmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.2"
+    }
+}

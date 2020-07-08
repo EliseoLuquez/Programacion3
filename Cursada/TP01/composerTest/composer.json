@@ -1,0 +1,13 @@
+{
+    "name": "lelis/composer-test",
+    "authors": [
+        {
+            "name": "eliseo",
+            "email": "leliseo89@hhotmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^2.0",
+        "namnv609/php-rest-countries": "^1.0"
+    }
+}
